@@ -7,7 +7,7 @@ export const personalDetails = {
   // Updated Links
   github: "https://github.com/UdayangaWeearakoon", 
   linkedin: "https://www.linkedin.com/in/udayanga-weerakoon-0b77a1269/",
-  phone: "https://wa.me/94764143047",
+  phone: "94764143047",
   about: "Motivated Data Science undergraduate (CGPA 3.58) with skills in full-stack development, automation, and AI-based solutions. I am passionate about creating smart, practical systems and currently seeking an internship to contribute to meaningful projects.",
 };
 
@@ -81,7 +81,7 @@ export const certifications = [
   },
   {
     title: "Python for Beginners",
-    issuer: "University of Moratuwa",
+    issuer: "University of Moratuwa, Sri Lanka",
     type: "Certification"
   },
   {
@@ -91,11 +91,11 @@ export const certifications = [
   },
   {
     title: "Winner - SynthArt Synergy 2024",
-    issuer: "SLIIT Kandy",
+    issuer: "SLIIT Kandy Uni",
     type: "Achievement"
   },
   {
-    title: "Dean's List (Awarded Twice)",
+    title: "Dean's List (Awarded Twice - Y2S1 & Y1S1)",
     issuer: "SLIIT",
     type: "Achievement"
   }

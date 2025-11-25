@@ -62,7 +62,7 @@ const Hero = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-500 to-cyan-400 p-1 rounded-full mb-6">
+        <div className="w-64 h-64 mx-auto bg-gradient-to-br from-blue-500 to-cyan-400 p-1 rounded-full mb-6">
             <img src="/profile.jpg" alt="Profile" className="w-full h-full object-cover rounded-full bg-slate-200 dark:bg-slate-800" />
         </div>
         <h2 className="text-blue-600 dark:text-cyan-400 font-mono mb-2 text-lg">Hello, I'm</h2>
@@ -80,7 +80,10 @@ const Hero = () => (
           <a href={personalDetails.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full hover:bg-blue-100 dark:hover:bg-cyan-900/30 hover:text-blue-600 dark:hover:text-cyan-400 transition-all border border-slate-200 dark:border-white/10">
             <Linkedin size={24} />
           </a>
-          <a href={`mailto:${personalDetails.email}`} className="p-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full hover:bg-blue-100 dark:hover:bg-cyan-900/30 hover:text-blue-600 dark:hover:text-cyan-400 transition-all border border-slate-200 dark:border-white/10">
+          <a href={`https://mail.google.com/mail/?view=cm&to=${personalDetails.email}&subject=Hello&body=Hi%20Udayanga,%0A%0AI%20would%20like%20to%20connect%20with%20you.`}
+          target="_blank"
+          rel="noopener noreferrer" 
+            className="p-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full hover:bg-blue-100 dark:hover:bg-cyan-900/30 hover:text-blue-600 dark:hover:text-cyan-400 transition-all border border-slate-200 dark:border-white/10">
             <Mail size={24} />
           </a>
         </div>
@@ -225,10 +228,12 @@ const Contact = () => (
         Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </p>
       <a 
-        href={`mailto:${personalDetails.email}`}
+        href={`https://wa.me/${personalDetails.phone}`}
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-block px-8 py-4 border border-blue-600 dark:border-cyan-400 text-blue-600 dark:text-cyan-400 rounded hover:bg-blue-50 dark:hover:bg-cyan-400/10 transition font-mono font-medium"
       >
-        Say Hello
+        Say Hello from WhatsApp
       </a>
     </div>
   </section>
