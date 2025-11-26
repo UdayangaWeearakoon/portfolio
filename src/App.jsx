@@ -227,14 +227,26 @@ const Contact = () => (
         I am currently looking for an internship in Data Science or Full-Stack Development. 
         Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </p>
-      <a 
-        href={`https://wa.me/${personalDetails.phone}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-8 py-4 border border-blue-600 dark:border-cyan-400 text-blue-600 dark:text-cyan-400 rounded hover:bg-blue-50 dark:hover:bg-cyan-400/10 transition font-mono font-medium"
-      >
-        Say Hello from WhatsApp
-      </a>
+      <div className="flex justify-center gap-4">
+        <a 
+          href={`https://wa.me/${personalDetails.phone}?text=Hi%20Udayanga,%0A%0AI%20would%20like%20to%20connect%20with%20you.`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-4 border border-blue-600 dark:border-cyan-400 text-blue-600 dark:text-cyan-400 rounded hover:bg-blue-50 dark:hover:bg-cyan-400/10 transition font-mono font-medium"
+        >
+          Say Hello from WhatsApp
+        </a>
+
+        <a 
+          href={`https://mail.google.com/mail/?view=cm&to=${personalDetails.email}&subject=Hello&body=Hi%20Udayanga,%0A%0AI%20would%20like%20to%20connect%20with%20you.`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-4 border border-blue-600 dark:border-cyan-400 text-blue-600 dark:text-cyan-400 rounded hover:bg-blue-50 dark:hover:bg-cyan-400/10 transition font-mono font-medium"
+        >
+          Or contact me via Email
+        </a>
+      </div>
+
     </div>
   </section>
 );

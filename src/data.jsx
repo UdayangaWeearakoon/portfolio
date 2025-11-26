@@ -15,12 +15,12 @@ export const skills = [
   {
     category: "Data Science & AI",
     icon: <Brain className="w-6 h-6" />,
-    items: ["Python", "Scikit-learn", "Pandas/NumPy", "NLTK", "R", "LightGBM"]
+    items: ["Python", "Scikit-learn", "Pandas/NumPy", "NLTK", "R", "LightGBM", "Matplotlib/Seaborn"]
   },
   {
     category: "Full Stack Web",
     icon: <Layout className="w-6 h-6" />,
-    items: ["React.js", "Next.js", "Node.js", "Express.js", "MERN Stack", "Spring Boot"]
+    items: ["React.js", "Next.js", "Node.js", "Express.js", "MERN Stack", "Spring Boot", "PostgreSQL"]
   },
   {
     category: "Cloud & DevOps",
@@ -30,7 +30,7 @@ export const skills = [
   {
     category: "Tools",
     icon: <Terminal className="w-6 h-6" />,
-    items: ["PostgreSQL", "FastAPI", "Figma", "VS Code", "IntelliJ"]
+    items: ["FastAPI", "Figma", "VS Code", "IntelliJ", "PyCharm", "Jupyter Notebooks", "Google Colab"]
   }
 ];
 
@@ -74,6 +74,11 @@ export const projects = [
 ];
 
 export const certifications = [
+  {
+    title: "Data Engineering on AWS - Foundations",
+    issuer: "Amazon Web Services (AWS)",
+    type: "Certification"
+  },
   {
     title: "AWS SimuLearn - Cloud Practitioner",
     issuer: "Amazon Web Services (AWS)",
